@@ -1,2 +1,2 @@
-A repository to post various work done while doing the Full Stack Engineer
+A repository to post various all the notable work I did while doing the Full Stack Engineer
 career path on CodeAcademy.
