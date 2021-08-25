@@ -1,3 +1,5 @@
+// Date : 23.08.2021
+
 let humanScore = 0;
 let computerScore = 0;
 let currentRoundNumber = 1;
