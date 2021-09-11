@@ -32,17 +32,17 @@ storyWords.forEach(word => {
     if (word === overusedWords[0]) {
         overusedCount1 += 1;
         if (overusedCount1 > 0) {
-            storyWords.pop(storyWords[indexOf word])
+            storyWords.splice(storyWords[storyWords.indexOf(word)], 1);  // Is supposed to remove overused words, doesn't work for some reason.
         }
     } else if (word === overusedWords[1]) {
         overusedCount2 += 1;
         if (overusedCount2 > 0) {
-            storyWords.pop(storyWords[indexOf word])
+            storyWords.splice(storyWords[storyWords.indexOf(word)], 1);  // Is supposed to remove overused words, doesn't work for some reason.
         }
     } else if (word === overusedWords[2]) {
         overusedCount3 += 1;
         if (overusedCount3 > 0) {
-            storyWords.pop(storyWords[index word])  
+            storyWords.splice(storyWords[storyWords.indexOf(word)], 1);  // Is supposed to remove overused words, doesn't work for some reason.
         }
     }
     
