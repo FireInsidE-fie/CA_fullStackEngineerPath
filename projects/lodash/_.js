@@ -38,7 +38,11 @@ let _ = {
                 return false;
             }
         }
-   }
+   },
+
+    words(inputString) {
+        return inputString.split(' ');
+    }
 };
 
 // Do not write or modify code below this line.
