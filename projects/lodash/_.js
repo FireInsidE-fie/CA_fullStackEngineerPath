@@ -1,3 +1,6 @@
+// https://www.codecademy.com/paths/full-stack-engineer-career-path/tracks/fscp-javascript-syntax-part-ii/modules/fecp-practice-javascript-syntax-arrays-loops-objects-iterators/projects/lodash
+// 27.09.2021
+
 let _ = {
     /* Takes three number and returns the first number clamped to the two others,
     or just the first number if it is between the two others. */
@@ -41,9 +44,7 @@ let _ = {
    },
 
     /* Splits a strings into words separated by a blank space. */
-    words(string) {
-        return string.split(' ');
-    },
+    words(string) { return string.split(' '); },
 
     /* Add empty spaces to each end of string if length is higher than string.length. */
     pad(string, length) {
@@ -61,6 +62,20 @@ let _ = {
         } else {
             return string;
         }
+    },
+
+    /* Verifies if object has a value at key index. */
+    has(object, key) { return object[key] ? true : false; },
+
+    /* Inverts the inputObject's keys and values. */
+    invert(inputObject) {  // Used the solution on that one :(       
+        let invertedObject = {};
+        for (const key in inputObject) {
+            let originalValue = key;
+            invertedObject.originalValue = key;
+        }
+
+        return invertedObject;
     }
 };
 
