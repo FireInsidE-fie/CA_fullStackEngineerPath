@@ -76,6 +76,24 @@ let _ = {
         }
 
         return invertedObject;
+    },
+
+    /* Finds the key of the first property to return a truthy value from a predicate() call. */
+    findKey(object, predicate) {  // Used part of the solution but find the final bug by myself.
+        for (key in object) {
+            let value = object.key;
+            let predicateReturnValue = predicate(value);
+
+            if (predicateReturnValue) {
+                return key;
+            }
+        }
+    },
+
+    drop(array, number) { return number ? array.slice(number): array.slice(1); },
+
+    dropWhile(array, predicate) {
+        
     }
 };
 
