@@ -79,7 +79,7 @@ let _ = {
     },
 
     /* Finds the key of the first property to return a truthy value from a predicate() call. */
-    findKey(object, predicate) {  // Used part of the solution but find the final bug by myself.
+    findKey(object, predicate) {  // Used part of the solution but found the final bug by myself.
         for (key in object) {
             let value = object.key;
             let predicateReturnValue = predicate(value);
@@ -92,7 +92,16 @@ let _ = {
 
     drop(array, number) { return number ? array.slice(number): array.slice(1); },
 
-    dropWhile(array, predicate) {
+    dropWhile(array, predicate) {  // Used solution :(
+        let dropNumber = array.findIndex(function(element, index) {
+            return !predicate(element, index, array)
+        });
+
+        let droppedArray = this.drop(array, dropNumber);
+        return droppedArray;
+    },
+
+    chunk(array, size) {
         
     }
 };

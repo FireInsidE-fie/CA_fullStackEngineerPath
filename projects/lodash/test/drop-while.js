@@ -13,7 +13,7 @@ if (!_.dropWhile) {
 }
 
 const indexIsSmallerThanElement = (element, index) => index < element;
-
+  
 assert.equals(TEST_NAME, 'Returns an array', '_.dropWhile([1, 2, 0, 4], indexIsSmallerThanElement)', Object.prototype.toString.call(_.dropWhile([1, 2, 0, 4], indexIsSmallerThanElement)), '[object Array]');
 
 if (Object.prototype.toString.call(_.dropWhile([1, 2, 0, 4], indexIsSmallerThanElement)) !== '[object Array]') {
