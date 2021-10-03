@@ -94,7 +94,7 @@ let _ = {
 
     dropWhile(array, predicate) {  // Used solution :(
         let dropNumber = array.findIndex(function(element, index) {
-            return !predicate(element, index, array)
+            return !predicate(element, index, array);
         });
 
         let droppedArray = this.drop(array, dropNumber);
@@ -102,7 +102,16 @@ let _ = {
     },
 
     chunk(array, size) {
+        let arrayOfArrays = [];
+        if (!size) {
+            size = 1;
+        }
         
+        for (let i = 0; i < array.length; i += size) {
+            console.log(i);
+            arrayOfArrays.push(array.slice(i, i + size));
+        }
+        return arrayOfArrays;
     }
 };
 
