@@ -24,11 +24,24 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 
 
 // Add your functions below:
+const validateCred = array => {
+    let doubledArray = [];  // Array that will contain the doubled numbers.
+    let summedCardNumbers = 0;  // Initializes future summed variable.
 
+    array.reverse().forEach(number => {  // Iterates through the card number to double everything if it doesn't go beyond 9.
+        if (number * 2 < 9) {
+            doubledArray.push(number * 2);
+        } else {
+            doubledArray.push(number * 2 - 9);
+        }
+    });
 
+    doubledArray.shift();
+    doubledArray.unshift(array[0]);  // Adds the last number that wasn't doubled.
 
+    doubledArray.forEach(number => summedCardNumbers += number);  // Sums the numbers. 
 
+    array.reverse();  // Reverts the original array to it's original state.
 
-
-
-
+    return summedCardNumbers % 10 === 0 ? true : false;  // Returns true if the card is valid, false if it isn't.
+};
