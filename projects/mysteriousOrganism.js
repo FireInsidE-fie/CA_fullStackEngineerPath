@@ -16,6 +16,21 @@ const mockUpStrand = () => {
     return newStrand;
 }
 
-const pAequorFactory = () => {
-    
+const pAequorFactory = (number, dnaBasesArray) => {
+    return {
+        specimenNum: number,
+        dna: dnaBasesArray,
+
+        mutate() {
+            let previousBase = this.dna[randomBase]
+            let mutatedBase = returnRandBase();
+
+            while (previousBase === mutatedBase) {  // Checks if the new value is the same as the old one (that wouldn't mutate the array at all if it was).
+                mutatedBase = returnRandBase();
+            }
+
+            this.dna[Math.floor(Math.random() * 15)] = mutatedBase;  // Mutates the DNA.
+            console.log(`New mutated DNA array : ${this.dna}`);  // Prints the mutated array for readability.
+        }
+    }
 }
