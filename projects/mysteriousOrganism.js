@@ -31,6 +31,18 @@ const pAequorFactory = (number, dnaBasesArray) => {
 
             this.dna[Math.floor(Math.random() * 15)] = mutatedBase;  // Mutates the DNA.
             console.log(`New mutated DNA array : ${this.dna}`);  // Prints the mutated array for readability.
+        },
+
+        // Compares two DNA samples and prints out how many bases are identical.
+        compareDNA(pAequorObject) {
+            let identicalTotal = [];  // Initializes the array that will contain how much bases are identical.
+            for (let i = 0; i < pAequorObject.length; i++) {
+                if (pAequorObject.dna[i] === this.dna[i]) {
+                    identicalTotal++;  // Increments the total of one if a base is the same on both DNAs.
+                }
+            }
+
+            console.log(`The number of identical bases is ${identicalTotal}.`);  // Prints out the final number.
         }
     }
 }
