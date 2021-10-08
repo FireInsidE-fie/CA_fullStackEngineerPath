@@ -52,11 +52,13 @@ const pAequorFactory = (number, dnaBasesArray) => {
 
 let specimens = [];  // Initializes the array that will contain 30 specimens.
 
-for (let i = 0; i < 30; i++) {
+let i = 0;
+while (i < 30) {
     let newSpeciment = pAequorFactory(i, mockUpStrand());  // Creates a new speciment.
 
     if (newSpeciment.willLikelySurvive()) {  // Checks if it will survive. If yes, add to the array.
         specimens.push(newSpeciment);
+        i++;
     }
 }
 
