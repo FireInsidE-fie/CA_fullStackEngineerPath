@@ -36,13 +36,28 @@ const pAequorFactory = (number, dnaBasesArray) => {
         // Compares two DNA samples and prints out how many bases are identical.
         compareDNA(pAequorObject) {
             let identicalTotal = [];  // Initializes the array that will contain how much bases are identical.
-            for (let i = 0; i < pAequorObject.length; i++) {
+            for (let i = 0; i < pAequorObject.dna.length; i++) {
                 if (pAequorObject.dna[i] === this.dna[i]) {
                     identicalTotal++;  // Increments the total of one if a base is the same on both DNAs.
                 }
             }
 
-            console.log(`The number of identical bases is ${identicalTotal}.`);  // Prints out the final number.
-        }
+            console.log(`The percentage of identical bases in both specimens is ${identicalTotal / pAequorObject.dna.length * 100}%.`);  // Prints out the final number in percentage
+        },
+
+        // Checks if the subject is more likely to survive by checking their C and G bases number.
+        willLikelySurvive() { return ((this.dna.filter(base => base === 'C' || base === 'G').length / this.dna.length * 100) >= 60) ? true: false }
     }
 }
+
+let specimens = [];  // Initializes the array that will contain 30 specimens.
+
+for (let i = 0; i < 30; i++) {
+    let newSpeciment = pAequorFactory(i, mockUpStrand());  // Creates a new speciment.
+
+    if (newSpeciment.willLikelySurvive()) {  // Checks if it will survive. If yes, add to the array.
+        specimens.push(newSpeciment);
+    }
+}
+
+console.log(specimens);
