@@ -46,7 +46,29 @@ const pAequorFactory = (number, dnaBasesArray) => {
         },
 
         // Checks if the subject is more likely to survive by checking their C and G bases number.
-        willLikelySurvive() { return ((this.dna.filter(base => base === 'C' || base === 'G').length / this.dna.length * 100) >= 60) ? true: false }
+        willLikelySurvive() { return ((this.dna.filter(base => base === 'C' || base === 'G').length / this.dna.length * 100) >= 60) ? true: false },
+
+        // Returns the complementary strand of this object's dna.
+        complementStrand() {
+            let complementaryStrand = [];  // Initializes the future complementary strand array.
+            
+            this.dna.forEach(base => {
+                switch (base) {
+                    case 'G':
+                        complementaryStrand.push('C');
+                    case 'C':
+                        complementaryStrand.push('G');
+                    case 'A':
+                        complementaryStrand.push('T');
+                    case 'T':
+                        complementaryStrand.push('A');
+                    default:
+                        console.log('DNA error.')
+                }
+            });
+
+            return complementaryStrand;
+        }
     }
 }
 
