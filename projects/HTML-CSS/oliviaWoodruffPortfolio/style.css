@@ -1,3 +1,25 @@
 /* https://www.codecademy.com/paths/full-stack-engineer-career-path/tracks/fscp-web-development-fundamentals/modules/fecp-learn-css-selectors-and-visual-rules/projects/css-visual-rules-project */
 /* 13.10.2021 */
 
+h1 {
+  color: azure;
+}
+
+body {
+  font-family: Georgia;
+  background-image: url(https://content.codecademy.com/courses/learn-css-selectors-visual-rules/hypnotize_bg.png);
+}
+
+.header {
+  background-color: cornflowerblue;
+  text-align: center;
+}
+
+.about-me {
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+.title {
+  font-weight: bold;
+}
