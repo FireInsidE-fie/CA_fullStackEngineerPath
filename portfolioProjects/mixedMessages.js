@@ -10,9 +10,5 @@ const adjectives = ["adorable", "evil", "deadly", "charming", "average", "salty"
 // Function that will generate a random index of a given array.
 let getRandomIndexOfArray = array => { return Math.round(Math.random() * array.length); }
 
-// Creates randomly generated words to complete the end message.
-const randomNoun = nouns[getRandomIndexOfArray(nouns)];
-const randomVerb = verbs[getRandomIndexOfArray(verbs)];
-const randomAdj = adjectives[getRandomIndexOfArray(adjectives)];
-
-console.log(`I'm walking with my ${randomNoun}, and I encounter a(n) ${randomAdj} ${randomNoun}. I ${randomVerb} with them, but my ${randomNoun} is becoming ${randomAdj}, so I ${randomVerb} again.`);
+// Returns the end message.
+console.log(`I'm walking with my ${nouns[getRandomIndexOfArray(nouns)]}, and I encounter a(n) ${adjectives[getRandomIndexOfArray(adjectives)]} ${nouns[getRandomIndexOfArray(nouns)]}. I ${verbs[getRandomIndexOfArray(verbs)]} with them, but my ${nouns[getRandomIndexOfArray(nouns)]} is becoming ${adjectives[getRandomIndexOfArray(adjectives)]}, so I ${verbs[getRandomIndexOfArray(verbs)]} again.`);
