@@ -4,11 +4,11 @@
 
 // Creates the arrays that will contain the three parts of the return messages.
 const nouns = ["Dog", "Cat", "Computer", "Human", "Phone", "insect", "bed", "best friend", "Plushie", "Youtuber"];
-const verbs = ["runs", "swims", "eats", "sleeps", "drinks", "dance", "ski", "bowl", "drive"];
+const verbs = ["run", "swim", "eat", "sleep", "drink", "dance", "ski", "bowl", "drive"];
 const adjectives = ["adorable", "evil", "deadly", "charming", "average", "salty", "brave", "foolish", "fancy", "macho", "tasty", "tricky", "slimy" ];
 
 // Function that will generate a random index of a given array.
-let getRandomIndexOfArray = array => { return Math.round(Math.random() * array.length); }
+let getRandomIndexOfArray = array => { return Math.round(Math.random() * (array.length - 1)); }
 
 // Returns the end message.
-console.log(`I'm walking with my ${nouns[getRandomIndexOfArray(nouns)]}, and I encounter a(n) ${adjectives[getRandomIndexOfArray(adjectives)]} ${nouns[getRandomIndexOfArray(nouns)]}. I ${verbs[getRandomIndexOfArray(verbs)]} with them, but my ${nouns[getRandomIndexOfArray(nouns)]} is becoming ${adjectives[getRandomIndexOfArray(adjectives)]}, so I ${verbs[getRandomIndexOfArray(verbs)]} again.`);
+console.log(`I'm walking with my ${nouns[getRandomIndexOfArray(nouns)]}, and I encounter a(n) ${adjectives[getRandomIndexOfArray(adjectives)]} ${nouns[getRandomIndexOfArray(nouns)]}. I ${verbs[getRandomIndexOfArray(verbs)]} with them, but my ${nouns[getRandomIndexOfArray(nouns)]} is becoming ${adjectives[getRandomIndexOfArray(adjectives)]}, so I ${verbs[getRandomIndexOfArray(verbs)]} to the ${nouns[getRandomIndexOfArray(nouns)]}.`);
