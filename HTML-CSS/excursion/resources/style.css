@@ -24,3 +24,11 @@ p {
   font-size: 21px;
   color: gray;
 }
+
+.phone-icon {
+  margin-top: 30px;
+}
+
+.copyright {
+  text-align: right;
+}
