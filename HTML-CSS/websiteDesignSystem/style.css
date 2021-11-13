@@ -3,12 +3,18 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-main {
-  border: 1px solid gray;
-  padding: 20px;
+.colors,
+.fonts,
+.text-styles {
+  margin-bottom: 20px;
 }
 
 /* Colors */
+
+.colors {
+  border: 1px solid gray;
+  padding: 20px;
+}
 
 .colors div {
   display: inline-block;
@@ -44,6 +50,8 @@ main {
 .fonts {
   line-height: 2;
   font-size: 20px;
+  border: 1px solid gray;
+  padding: 20px;
 }
 
 #mochiy {
@@ -56,4 +64,11 @@ main {
 
 #josefin {
   font-family: "Josefin Sans", sans-serif;
+}
+
+/* Text styles */
+
+.text-styles {
+  border: 1px solid gray;
+  padding: 20px;
 }
