@@ -1,0 +1,35 @@
+html {
+  margin: 0px 200px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Colors */
+
+.colors {
+  border: 1px solid gray;
+  padding: 20px;
+}
+
+.colors div {
+  display: inline-block;
+  text-align: center;
+  height: 100px;
+  margin: 10px;
+  width: 300px;
+}
+
+#purple {
+  background-color: purple;
+}
+
+#pastelpink {
+  background-color: pink;
+}
+
+#turquoise {
+  background-color: turquoise;
+}
+
+#royalblue {
+  background-color: blue;
+}
