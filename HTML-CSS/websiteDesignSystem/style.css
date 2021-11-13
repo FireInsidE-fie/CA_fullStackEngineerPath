@@ -42,5 +42,18 @@ main {
 /* Fonts */
 
 .fonts {
-  
+  line-height: 2;
+  font-size: 20px;
+}
+
+#mochiy {
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+
+#yuji {
+  font-family: "Yuji Boku", sans-serif;
+}
+
+#josefin {
+  font-family: "Josefin Sans", sans-serif;
 }
