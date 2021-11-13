@@ -12,7 +12,7 @@ html {
 /* Colors */
 
 .colors {
-  border: 1px solid gray;
+  border: 2px solid gray;
   padding: 20px;
 }
 
@@ -50,7 +50,7 @@ html {
 .fonts {
   line-height: 2;
   font-size: 20px;
-  border: 1px solid gray;
+  border: 2px solid gray;
   padding: 20px;
 }
 
@@ -69,6 +69,24 @@ html {
 /* Text styles */
 
 .text-styles {
-  border: 1px solid gray;
+  border: 2px solid gray;
   padding: 20px;
+}
+
+#h1 {
+  font-weight: 700;
+  font-size: 40px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+#h2 {
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+#em {
+  font-weight: 400;
+  font-size: 15px;
+  font-family: "Mochiy Pop P One", sans-serif;
 }
