@@ -44,6 +44,16 @@ main {
   background-color: black;
 }
 
+#tea-of-the-month div {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+#tea-of-the-month img {
+  width: 300px;
+  height: 200px;
+}
+
 /* Footer */
 footer {
   text-align: left;
