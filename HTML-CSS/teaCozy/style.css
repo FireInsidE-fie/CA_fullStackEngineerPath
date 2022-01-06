@@ -33,15 +33,14 @@ main {
 }
 
 #our-mission {
-  background-image: url("");
-  width: 1200px;
-}
-
-#our-mission img {
-  display: ;
+  background-image: url("images/background.webp");
+  height: 700px;
+  display: flex;
+  align-items: center;
 }
 
 #our-mission-text {
+  width: 1200px;
   background-color: black;
 }
 
