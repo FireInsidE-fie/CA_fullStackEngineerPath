@@ -10,6 +10,7 @@ body {
 /* Header */
 header {
   border-bottom: 1px solid seashell;
+  background-color: black;
   height: 69px;
   width: 100%;
   position: fixed;
@@ -34,6 +35,14 @@ main {
 #our-mission {
   background-image: url("");
   width: 1200px;
+}
+
+#our-mission img {
+  display: ;
+}
+
+#our-mission-text {
+  background-color: black;
 }
 
 /* Footer */
