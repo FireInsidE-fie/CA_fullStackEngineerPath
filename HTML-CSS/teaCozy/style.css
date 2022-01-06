@@ -4,33 +4,36 @@ body {
   color: seashell;
   background-color: black;
   opacity: 0.9;
+  text-align: center;
 }
 
 /* Header */
 header {
   border-bottom: 1px solid seashell;
   height: 69px;
+  width: 100%;
   position: fixed;
-}
-
-header * {
-  display: inline-flex;
+  text-align: left;
 }
 
 header img {
   margin-left: 10px;
   height: 50px;
-  text-align: left;
 }
 
 header span {
   text-decoration: underline;
-  align-items: right;
+  text-align: right;
 }
 
 /* Main */
 main {
   padding-top: 69px;
+}
+
+#our-mission {
+  background-image: url("");
+  width: 1200px;
 }
 
 /* Footer */
