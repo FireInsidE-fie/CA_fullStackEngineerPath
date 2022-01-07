@@ -45,13 +45,20 @@ main {
 }
 
 #tea-of-the-month div {
-  display: inline-flex;
+  display: inline-block;
   flex-wrap: wrap;
+  max-width: 300px;
+  text-align: center;
 }
 
 #tea-of-the-month img {
   width: 300px;
   height: 200px;
+}
+
+#tea-of-the-month span {
+  display: block;
+  padding: 10px 0px;
 }
 
 /* Footer */
