@@ -4,7 +4,6 @@ body {
   color: seashell;
   background-color: black;
   opacity: 0.9;
-  text-align: center;
 }
 
 /* Header */
@@ -15,22 +14,25 @@ header {
   width: 100%;
   position: fixed;
   top: 0px;
+  text-align: right;
 }
 
 header img {
-  margin: 10px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
   height: 50px;
-  text-align: left;
 }
 
 header span {
   text-decoration: underline;
-  text-align: right;
+  display: inline-flex;
 }
 
 /* Main */
 main {
   padding-top: 69px;
+  text-align: center;
 }
 
 #our-mission {
@@ -45,6 +47,10 @@ main {
 #our-mission-text {
   width: 1200px;
   background-color: black;
+}
+
+#tea-of-the-month {
+  margin: 20px;
 }
 
 #tea-of-the-month div {
