@@ -15,12 +15,12 @@ header {
   width: 100%;
   position: fixed;
   top: 0px;
-  text-align: left;
 }
 
 header img {
-  margin-left: 10px;
+  margin: 10px;
   height: 50px;
+  text-align: left;
 }
 
 header span {
@@ -36,6 +36,7 @@ main {
 #our-mission {
   background-image: url("images/background.webp");
   background-repeat: no-repeat;
+  background-position: center;
   height: 700px;
   display: flex;
   align-items: center;
