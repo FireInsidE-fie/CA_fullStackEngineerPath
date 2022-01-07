@@ -63,6 +63,23 @@ main {
   padding: 10px 0px;
 }
 
+#locations {
+  background-image: url("images/img-locations-background.webp");
+  background-repeat: no-repeat;
+  flex-wrap: wrap;
+  height: 500px;
+  padding-top: 50px;
+}
+
+#locations div {
+  display: inline-block;
+  background-color: black;
+  margin: 15px 20px;
+  width: 300px;
+  padding: 20px;
+  line-height: 2;
+}
+
 /* Footer */
 footer {
   text-align: left;
