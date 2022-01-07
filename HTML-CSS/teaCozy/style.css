@@ -38,7 +38,7 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   height: 700px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
 }
 
@@ -67,6 +67,7 @@ main {
 #locations {
   background-image: url("images/img-locations-background.webp");
   background-repeat: no-repeat;
+  background-position: center;
   flex-wrap: wrap;
   height: 500px;
   padding-top: 50px;
