@@ -27,6 +27,7 @@ header img {
 header span {
   text-decoration: underline;
   display: inline-flex;
+  padding: 23px 20px 0px 0px;
 }
 
 /* Main */
@@ -88,7 +89,13 @@ main {
   line-height: 2;
 }
 
+#contact {
+  line-height: 1.5;
+  height: 200px;
+}
+
 /* Footer */
 footer {
   text-align: left;
+  margin-left: 20px;
 }
