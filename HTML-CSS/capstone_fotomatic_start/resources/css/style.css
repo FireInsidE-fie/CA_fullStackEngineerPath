@@ -253,10 +253,10 @@ header .mobile {
 }
 
 .feature h2 {
-  padding-bottom: .5rem;
   font-size: 2.25rem;
   font-weight: bold;
   color: #4a4a4a;
+  margin: 40px 0px 0px 0px;
 }
 
 .feature h3 {
@@ -317,8 +317,14 @@ header .mobile {
 }
 
 #filters-section .images-container {
-  max-width: 100%;
+  width: 98%;
   padding: 0 1%;
+  display: flex;
+  flex-grow: 1;
+}
+
+#filters-section img {
+  width: 100%;
 }
 
 @media only screen and (max-width: 760px) {
