@@ -5,6 +5,10 @@ html {
   font-size: 16px;
 }
 
+body {
+  margin: 0;
+}
+
 .main-content {
   position: relative;
   top: 5.3125rem; /* To offset for fixed header. */
@@ -78,7 +82,7 @@ nav a {
 
 header .icon {
   width: 1rem;
-  padding-left: .75rem;
+  padding: 0px 30px 0px .75rem;
 }
 
 header .mobile {
@@ -137,7 +141,7 @@ header .mobile {
   border-radius: 4px;
   background-color: #9dc20b;
   align-items: center;  
-  margin: 170px 0px;
+  margin: 170px 0px 170px 100px;
 }
 
 #sign-up-cta .content {
@@ -145,17 +149,20 @@ header .mobile {
   margin-top: 2rem;
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
-  font-weight: 100;
   line-height: 1.4;
   color: white;
 }
 
 #sign-up-cta h1 {
   font-size: 3.125rem;
+  margin: 0;
+  font-weight: normal;
 }
 
 #sign-up-cta h2 {
   font-size: 2.25rem;
+  margin: 0;
+  font-weight: normal;
 }
 
 #sign-up-cta span strong {
@@ -174,6 +181,7 @@ header .mobile {
 #sign-up-cta .button {
   margin-top: 1.625rem;
   padding: 1.25rem 7.25rem;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 760px) {
