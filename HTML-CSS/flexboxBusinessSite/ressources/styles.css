@@ -1,17 +1,36 @@
 body {
   margin: 0px;
   font-family: Quicksand, Arial, sans-serif;
+  background-color: azure;
+}
+
+#main-grid {
+  display: grid;
+  grid-template: 1fr / 10% 1fr 10%;
+}
+
+#main-grid * {
+  grid-area: 1 / 2;
 }
 
 /* Title part */
+
 #title {
   display: grid;
-  grid-template: repeat(3, 1fr) / repeat(5, 1fr);
+  grid-template: repeat(3, 1fr) / repeat(4, 1fr);
   background-image: url("./title-background.png");
   background-repeat: no-repeat;
   background-position: 0% 30%;
+  background-size: cover;
 }
 
 #title h1 {
   grid-area: 2 / 2 / span 1 / span 1;
+}
+
+/* Introduction */
+
+#introduction {
+  display: none;
+
 }
