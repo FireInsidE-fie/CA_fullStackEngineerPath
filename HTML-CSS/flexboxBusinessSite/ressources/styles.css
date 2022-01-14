@@ -1,16 +1,17 @@
 body {
   margin: 0px;
+  font-family: Quicksand, Arial, sans-serif;
 }
 
 /* Title part */
 #title {
   display: grid;
-  grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+  grid-template: repeat(3, 1fr) / repeat(5, 1fr);
   background-image: url("./title-background.png");
   background-repeat: no-repeat;
+  background-position: 0% 30%;
 }
 
 #title h1 {
-  grid-area: 2 / 2 / span 1 / span 2;
-  color: white;
+  grid-area: 2 / 2 / span 1 / span 1;
 }
