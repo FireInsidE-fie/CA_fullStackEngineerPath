@@ -6,8 +6,11 @@ body {
 #title {
   display: grid;
   grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+  background-image: url("./title-background.png");
+  background-repeat: no-repeat;
 }
 
 #title h1 {
   grid-area: 2 / 2 / span 1 / span 2;
+  color: white;
 }
