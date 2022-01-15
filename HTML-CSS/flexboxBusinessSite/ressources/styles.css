@@ -5,16 +5,14 @@ body {
   font-size: 26px;
 }
 
-#main-grid {
+main {
   display: grid;
-  grid-template: 250px 1fr / 10% 1fr 10%;
+  grid-template: 250px 1fr 1fr / 10% 1fr 10%;
 }
 
-#main-grid * {
+#who-are-we,
+#services {
   grid-area: 1 / 2;
-}
-
-#who-are-we {
   background-color: azure;
 }
 
@@ -34,7 +32,7 @@ body {
   grid-area: 2 / 2 / span 1 / span 1;
 }
 
-/* Introduction */
+/* Who are we */
 
 #who-are-we {
   grid-area: 2 / 2;
@@ -44,4 +42,10 @@ body {
 
 #who-are-we-text {
   grid-area: 2 / 2;
+}
+
+/* Services */
+
+#services {
+  grid-area: 3 / 2;
 }
