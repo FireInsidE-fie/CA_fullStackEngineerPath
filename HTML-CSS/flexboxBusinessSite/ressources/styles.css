@@ -38,6 +38,7 @@ main {
   grid-area: 2 / 2;
   display: grid;
   grid-template: 20px 1fr 20px / 50px 1fr 50px;
+  border-bottom: 1px solid black;
 }
 
 #who-are-we-text {
@@ -48,4 +49,9 @@ main {
 
 #services {
   grid-area: 3 / 2;
+}
+
+#services-webdev,
+#services-discord {
+  display: flex;  
 }
