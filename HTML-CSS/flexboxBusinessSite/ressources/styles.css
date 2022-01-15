@@ -1,21 +1,27 @@
 body {
   margin: 0px;
   font-family: Quicksand, Arial, sans-serif;
-  background-color: azure;
+  background-color: grey;
+  font-size: 26px;
 }
 
 #main-grid {
   display: grid;
-  grid-template: 1fr / 10% 1fr 10%;
+  grid-template: 250px 1fr / 10% 1fr 10%;
 }
 
 #main-grid * {
   grid-area: 1 / 2;
 }
 
+#who-are-we {
+  background-color: azure;
+}
+
 /* Title part */
 
 #title {
+  grid-area: 1 / 2;
   display: grid;
   grid-template: repeat(3, 1fr) / repeat(4, 1fr);
   background-image: url("./title-background.png");
@@ -30,7 +36,12 @@ body {
 
 /* Introduction */
 
-#introduction {
-  display: none;
+#who-are-we {
+  grid-area: 2 / 2;
+  display: grid;
+  grid-template: 20px 1fr 20px / 50px 1fr 50px;
+}
 
+#who-are-we-text {
+  grid-area: 2 / 2;
 }
