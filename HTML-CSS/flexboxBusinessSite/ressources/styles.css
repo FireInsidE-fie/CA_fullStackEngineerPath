@@ -7,7 +7,7 @@ body {
 
 main {
   display: grid;
-  grid-template: 250px 1fr 1fr / 10% 1fr 10%;
+  grid-template: 250px 200px 1fr / 10% 1fr 10%;
 }
 
 #who-are-we,
@@ -36,13 +36,17 @@ main {
 
 #who-are-we {
   grid-area: 2 / 2;
-  display: grid;
-  grid-template: 20px 1fr 20px / 50px 1fr 50px;
   border-bottom: 1px solid black;
+  display: grid;
+  grid-template: 20px 1fr 20px / 50px 20% 80% 50px;
 }
 
-#who-are-we-text {
+#who-are-we h2 {
   grid-area: 2 / 2;
+}
+
+#who-are-we p {
+  grid-area: 2 / 3;
 }
 
 /* Services */
