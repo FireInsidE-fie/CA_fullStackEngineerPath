@@ -38,7 +38,8 @@ main {
   grid-area: 2 / 2;
   border-bottom: 1px solid black;
   display: grid;
-  grid-template: 20px 1fr 20px / 50px 20% 80% 50px;
+  grid-template: 20px 1fr 20px / 50px 300px 1fr 50px;
+  max-width: 100%;
 }
 
 #who-are-we h2 {
@@ -53,9 +54,15 @@ main {
 
 #services {
   grid-area: 3 / 2;
+  padding: 20px 50px;
+  display: flex;  
+}
+
+#services h2 {
+  width: 300px;
 }
 
 #services-webdev,
 #services-discord {
-  display: flex;  
+  flex-wrap: wrap;
 }
