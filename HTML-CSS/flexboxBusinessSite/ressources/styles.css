@@ -7,13 +7,15 @@ body {
 
 main {
   display: grid;
-  grid-template: 250px 200px 1fr / 10% 1fr 10%;
+  grid-template: 250px 200px 1fr 1fr / 10% 1fr 10%;
 }
 
 #who-are-we,
-#services {
+#services,
+#team {
   grid-area: 1 / 2;
   background-color: azure;
+  border-bottom: 1px solid black;
 }
 
 /* Title part */
@@ -36,7 +38,6 @@ main {
 
 #who-are-we {
   grid-area: 2 / 2;
-  border-bottom: 1px solid black;
   display: grid;
   grid-template: 20px 1fr 20px / 50px 300px 1fr 50px;
   max-width: 100%;
@@ -70,6 +71,13 @@ main {
   flex-wrap: wrap;
   width: 50%;
   background-color: #c0cccc;
-  margin: 0px 10px;
+  margin: 0px 10px 30px 10px;
   padding: 0px 20px;
+}
+
+/* Team */
+
+#team {
+  grid-area: 4 / 2;
+  padding: 20px 50px;
 }
