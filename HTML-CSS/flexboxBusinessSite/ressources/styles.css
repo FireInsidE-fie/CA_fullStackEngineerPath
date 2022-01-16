@@ -55,7 +55,10 @@ main {
 #services {
   grid-area: 3 / 2;
   padding: 20px 50px;
-  display: flex;  
+}
+
+#services-text {
+  display: flex;
 }
 
 #services h2 {
@@ -65,4 +68,8 @@ main {
 #services-webdev,
 #services-discord {
   flex-wrap: wrap;
+  width: 50%;
+  background-color: #c0cccc;
+  margin: 0px 10px;
+  padding: 0px 20px;
 }
