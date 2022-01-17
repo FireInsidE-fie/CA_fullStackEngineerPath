@@ -1,0 +1,22 @@
+body {
+
+}
+
+/* Header */
+#title {
+  grid-area: 1 / 2;
+  background-image: url("./titleBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: 1000px;
+}
+
+/* Main */
+main {
+  display: grid;
+  grid-template: 200px 1fr 100px / 20% 1fr 20%; 
+}
+
+/* Footer */
+footer {
+  grid-area: 3 / 2;
+}
