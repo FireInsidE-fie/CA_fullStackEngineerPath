@@ -1,5 +1,11 @@
-body {
+html {
+  font-size: 26px;
+}
 
+body {
+  font-family: "Mochiy Pop P One", Arial, sans-serif;
+  margin: 0px;
+  background-color: lightgoldenrodyellow;
 }
 
 /* Header */
@@ -7,13 +13,47 @@ body {
   grid-area: 1 / 2;
   background-image: url("./titleBackground.jpg");
   background-repeat: no-repeat;
-  background-size: 1000px;
+  background-size: 1500px;
+  background-position: right top -250px;
+  max-width: 1400px;
+  justify-content: space-around;
 }
 
 /* Main */
 main {
   display: grid;
-  grid-template: 200px 1fr 100px / 20% 1fr 20%; 
+  grid-template: 400px 200px 500px 1fr 100px / 15% 1fr 15%; 
+}
+
+#introduction,
+#members,
+#games {
+  padding: 20px 50px;
+  background-color: white;
+  border-bottom: black 1px solid;
+}
+
+/* Title */
+h1 {
+  position: relative;
+  top: 50px;
+  left: 150px;
+  font-size: 4rem;
+}
+
+/* Introduction */
+#introduction {
+  grid-area: 2 / 2;
+}
+
+/* Members */
+#members {
+  grid-area: 3 / 2;
+}
+
+/* Games */
+#games {
+  grid-area: 4 / 2;
 }
 
 /* Footer */
