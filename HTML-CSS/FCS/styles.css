@@ -11,18 +11,25 @@ body {
 /* Header */
 #title {
   grid-area: 1 / 2;
-  background-image: url("./titleBackground.jpg");
-  background-repeat: no-repeat;
-  background-size: 1500px;
-  background-position: right top -250px;
+  display: grid;
+  grid-template: 1fr / 3fr 1fr;
   max-width: 1400px;
   justify-content: space-around;
+}
+
+#title h1 {
+  grid-area: 1 / 1;
+}
+
+#title img {
+  max-width: 1000px;
+  grid-area: 1 / 2;
 }
 
 /* Main */
 main {
   display: grid;
-  grid-template: 400px 200px 500px 1fr 100px / 15% 1fr 15%; 
+  grid-template: 400px minmax(100px, auto) 500px 1fr 100px / 15% 1fr 15%; 
 }
 
 #introduction,
@@ -30,7 +37,7 @@ main {
 #games {
   padding: 20px 50px;
   background-color: white;
-  border-bottom: black 1px solid;
+  border-top: black 5px solid;
 }
 
 /* Title */
@@ -44,6 +51,11 @@ h1 {
 /* Introduction */
 #introduction {
   grid-area: 2 / 2;
+  height: 100%;
+}
+
+#introduction p {
+  margin: 0;
 }
 
 /* Members */
