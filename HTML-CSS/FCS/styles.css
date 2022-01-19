@@ -8,7 +8,7 @@ body {
   background-color: lightgoldenrodyellow;
 }
 
-/* Header */
+/* Title */
 #title {
   grid-area: 1 / 2;
   display: grid;
@@ -19,17 +19,19 @@ body {
 
 #title h1 {
   grid-area: 1 / 1;
+  margin: auto 0px;
+  font-size: 3rem;
 }
 
 #title img {
-  max-width: 1000px;
+  max-height: 300px;
   grid-area: 1 / 2;
 }
 
 /* Main */
 main {
   display: grid;
-  grid-template: 400px minmax(100px, auto) 500px 1fr 100px / 15% 1fr 15%; 
+  grid-template: minmax(100px, auto) minmax(100px, auto) minmax(500px, auto) 1fr / 15% 1fr 15%; 
 }
 
 #introduction,
@@ -38,14 +40,6 @@ main {
   padding: 20px 50px;
   background-color: white;
   border-top: black 5px solid;
-}
-
-/* Title */
-h1 {
-  position: relative;
-  top: 50px;
-  left: 150px;
-  font-size: 4rem;
 }
 
 /* Introduction */
@@ -72,7 +66,28 @@ h1 {
   display: flex;
 }
 
+#games-list div {
+  margin: 20px;
+  padding: 10px;
+  width: 50%;
+  background-color: lightblue;
+  height: 200px;
+}
+
+#games-list h3 {
+  margin: 0 0 10px 0;
+}
+
 /* Footer */
 footer {
-  grid-area: 3 / 2;
+  grid-area: 5 / 2;
+  text-align: center;
+  padding: 5px 0;
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 800px) {
+  main {
+    grid-template-columns: 5% 1fr 5%;
+  }
 }
