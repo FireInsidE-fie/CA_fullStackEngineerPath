@@ -4,3 +4,6 @@ const hat = '^';
 const hole = 'O';
 const fieldCharacter = '░';
 const pathCharacter = '*';
+
+const name = prompt('What is your name? ');
+console.log(`Welcome ${name}!`)
