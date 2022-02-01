@@ -13,11 +13,9 @@ const pathCharacter = '*';
 class Field {
   constructor(field) {
     this.field = field;
-    this.player = {
-      gameOn : true,
-      positionX : 0,
-      positionY : 0
-    };
+    this.gameOn = true;
+    this.playerX = 0;
+    this.playerY = 0;
   }
 
   print() {
@@ -35,12 +33,26 @@ const playerField = new Field([
   ['░', '░', '░', '░', 'O', '░']
 ]);
 
+console.log(playerField.playerX + 3);
+
 // Initializing player movement
 while (playerField.gameOn = true) {
   playerField.print();
-  let direction = prompt('Where will you go? (wasd)');
+  let direction = prompt('Where will you go? (wasd) ');
 
-  if (direction = 'd') {
+  if (direction = 'a' & playerField.playerX < 0) {  // Going left
+    playerField.field[playerField.playerY][playerField.playerX] = '░';
+    
+    playerField.playerX -= 1;
 
+    playerField.field[playerField.playerY][playerField.playerX] = '*';
+  } 
+  
+  if (direction = 'd' & playerField.playerX > playerField.field[0].length) {  // Going right
+    playerField.field[playerField.playerY][playerField.playerX] = '░';
+    
+    playerField.player.positionX += 1;
+
+    playerField.field[playerField.playerY][playerField.playerX] = '*';
   }
 }
