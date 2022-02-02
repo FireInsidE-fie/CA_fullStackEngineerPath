@@ -26,6 +26,7 @@ class Field {
 
   static generateField(height, width) {
     let field = [];
+    let hatPosition = [Math.floor(Math.random() * width), Math.floor(Math.random() * height)];
 
     for (let i1 = 0; i1 < height; i1++) {
       field.push([]);
@@ -33,13 +34,15 @@ class Field {
         field[i1].push('░');
       }
     }
+    field[hatPosition[1]][hatPosition[0]] = '^';
+    field[this.playerY][this.playerX] = '*';
 
     return field;
   }
 }
 
 // Creating field
-const playerField = new Field(Field.generateField(2, 8));
+const playerField = new Field(Field.generateField(8, 12));
 
 // Initializing player movement
 let direction = '';
