@@ -31,11 +31,16 @@ class Field {
     for (let i1 = 0; i1 < height; i1++) {
       field.push([]);
       for (let i2 = 0; i2 < width; i2++) {
-        field[i1].push('░');
+        if (Math.random() * 10 > 3) {
+          field[i1].push('░');
+        } else {
+          field[i1].push('O');
+        }
       }
     }
+
     field[hatPosition[1]][hatPosition[0]] = '^';
-    field[this.playerY][this.playerX] = '*';
+    field[0][0] = '*';
 
     return field;
   }
