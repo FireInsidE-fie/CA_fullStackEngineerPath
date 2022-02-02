@@ -25,19 +25,22 @@ class Field {
   }
 
   static generateField(height, width) {
-    for (let i = 0; i < height - 1; i++) {
-      for (let i = 0; i < width - 1; i++) {
-        console.log('boop');
+    let field = [];
+
+    for (let i1 = 0; i1 < height; i1++) {
+      field.push([]);
+      for (let i2 = 0; i2 < width; i2++) {
+        field[i1].push('░');
       }
-      console.log('beep');
     }
+
+    return field;
   }
 }
 
 // Creating field
-const playerField = new Field(Field.generateField(2, 4));
+const playerField = new Field(Field.generateField(2, 8));
 
-/*
 // Initializing player movement
 let direction = '';
 
@@ -115,4 +118,3 @@ while (playerField.gameOn = true) {
 
   }
 }
-*/
