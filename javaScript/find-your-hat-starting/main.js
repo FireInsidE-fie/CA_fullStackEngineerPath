@@ -6,8 +6,8 @@ const fieldCharacter = '░';
 const pathCharacter = '*';
 
 // Prompting tests
-//const name = prompt('What is your name? ');
-//console.log(`Welcome ${name}!`)
+// const name = prompt('What is your name? ');
+// console.log(`Welcome ${typeof name}!`)
 
 // Field class
 class Field {
@@ -23,36 +23,96 @@ class Field {
       console.log(this.field[i].join(''));
     }
   }
+
+  static generateField(height, width) {
+    for (let i = 0; i < height - 1; i++) {
+      for (let i = 0; i < width - 1; i++) {
+        console.log('boop');
+      }
+      console.log('beep');
+    }
+  }
 }
 
 // Creating field
-const playerField = new Field([
-  ['*', '░', '░', 'O', 'O', '░'],
-  ['O', 'O', '░', '░', '░', 'O'],
-  ['^', '░', 'O', '░', 'O', 'O'],
-  ['░', '░', '░', '░', 'O', '░']
-]);
+const playerField = new Field(Field.generateField(2, 4));
 
-console.log(playerField.playerX + 3);
-
+/*
 // Initializing player movement
+let direction = '';
+
 while (playerField.gameOn = true) {
   playerField.print();
-  let direction = prompt('Where will you go? (wasd) ');
+  direction = prompt('Where will you go? (wasd) ');
 
-  if (direction = 'a' & playerField.playerX < 0) {  // Going left
-    playerField.field[playerField.playerY][playerField.playerX] = '░';
+  if (direction == 'a' && playerField.playerX > 0) {  // Going left
+    if (playerField.field[playerField.playerY][playerField.playerX - 1] == '░') {
+      playerField.field[playerField.playerY][playerField.playerX] = '░';
     
-    playerField.playerX -= 1;
+      playerField.playerX -= 1;
 
-    playerField.field[playerField.playerY][playerField.playerX] = '*';
-  } 
-  
-  if (direction = 'd' & playerField.playerX > playerField.field[0].length) {  // Going right
-    playerField.field[playerField.playerY][playerField.playerX] = '░';
+      playerField.field[playerField.playerY][playerField.playerX] = '*';
+
+    } else if (playerField.field[playerField.playerY][playerField.playerX - 1] == 'O') {
+      console.log('You feel down a hole!');
+      process.exit();
+      
+    } else if (playerField.field[playerField.playerY][playerField.playerX - 1] == '^') {
+      console.log('You found the hat! You win!');
+      process.exit();
+    }
+
+  } else if (direction == 'd' && playerField.playerX < playerField.field[0].length - 1) {  // Going right    
+    if (playerField.field[playerField.playerY][playerField.playerX + 1] == '░') {
+      playerField.field[playerField.playerY][playerField.playerX] = '░';
     
-    playerField.player.positionX += 1;
+      playerField.playerX += 1;
 
-    playerField.field[playerField.playerY][playerField.playerX] = '*';
+      playerField.field[playerField.playerY][playerField.playerX] = '*';
+
+    } else if (playerField.field[playerField.playerY][playerField.playerX + 1] == 'O') {
+      console.log('You feel down a hole!');
+      process.exit();
+      
+    } else if (playerField.field[playerField.playerY][playerField.playerX + 1] == '^') {
+      console.log('You found the hat! You win!');
+      process.exit();
+    }
+
+  } else if (direction == 'w' && playerField.playerY > 0) {  // Going up
+    if (playerField.field[playerField.playerY - 1][playerField.playerX] == '░') {
+      playerField.field[playerField.playerY][playerField.playerX] = '░';
+    
+      playerField.playerY -= 1;
+
+      playerField.field[playerField.playerY][playerField.playerX] = '*';
+
+    } else if (playerField.field[playerField.playerY - 1][playerField.playerX] == 'O') {
+      console.log('You feel down a hole!');
+      process.exit();
+      
+    } else if (playerField.field[playerField.playerY - 1][playerField.playerX] == '^') {
+      console.log('You found the hat! You win!');
+      process.exit();
+    }
+
+  } else if (direction == 's' && playerField.playerY < playerField.field.length - 1) {  // Going down
+    if (playerField.field[playerField.playerY + 1][playerField.playerX] == '░') {
+      playerField.field[playerField.playerY][playerField.playerX] = '░';
+    
+      playerField.playerY += 1;
+
+      playerField.field[playerField.playerY][playerField.playerX] = '*';
+
+    } else if (playerField.field[playerField.playerY + 1][playerField.playerX] == 'O') {
+      console.log('You feel down a hole!');
+      process.exit();
+      
+    } else if (playerField.field[playerField.playerY + 1][playerField.playerX] == '^') {
+      console.log('You found the hat! You win!');
+      process.exit();
+    }
+
   }
 }
+*/
